@@ -41,7 +41,7 @@ rq
 marshmallow
 
 # Phone number processing
-phonumbers
+
 
 # Date and time handling
 python-dateutil
