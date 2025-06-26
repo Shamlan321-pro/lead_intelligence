@@ -1,0 +1,295 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "campaign_details_section",
+  "naming_series",
+  "campaign_name",
+  "status",
+  "column_break_4",
+  "owner",
+  "created_date",
+  "start_date",
+  "end_date",
+  "target_criteria_section",
+  "business_type",
+  "location",
+  "target_lead_count",
+  "column_break_12",
+  "filter_criteria",
+  "ai_personalization",
+  "email_configuration_section",
+  "company_profile",
+  "outreach_template",
+  "column_break_17",
+  "email_subject",
+  "email_body",
+  "campaign_statistics_section",
+  "created_leads",
+  "emails_sent",
+  "emails_delivered",
+  "column_break_23",
+  "emails_opened",
+  "emails_clicked",
+  "response_rate",
+  "execution_details_section",
+  "execution_log",
+  "column_break_28",
+  "api_usage_stats"
+ ],
+ "fields": [
+  {
+   "fieldname": "campaign_details_section",
+   "fieldtype": "Section Break",
+   "label": "Campaign Details"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CAMP-.YYYY.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "campaign_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Campaign Name",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nActive\nPaused\nCompleted\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "label": "Owner",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "created_date",
+   "fieldtype": "Date",
+   "label": "Created Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "target_criteria_section",
+   "fieldtype": "Section Break",
+   "label": "Target Criteria"
+  },
+  {
+   "fieldname": "business_type",
+   "fieldtype": "Data",
+   "label": "Business Type",
+   "placeholder": "e.g., restaurants, gyms, retail stores"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "placeholder": "e.g., New York, NY or specific address"
+  },
+  {
+   "default": "50",
+   "fieldname": "target_lead_count",
+   "fieldtype": "Int",
+   "label": "Target Lead Count"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "filter_criteria",
+   "fieldtype": "Long Text",
+   "label": "Filter Criteria (JSON)",
+   "placeholder": "{\"requires_website\": true, \"requires_phone\": true}"
+  },
+  {
+   "default": 1,
+   "fieldname": "ai_personalization",
+   "fieldtype": "Check",
+   "label": "Enable AI Personalization"
+  },
+  {
+   "fieldname": "email_configuration_section",
+   "fieldtype": "Section Break",
+   "label": "Email Configuration"
+  },
+  {
+   "fieldname": "company_profile",
+   "fieldtype": "Link",
+   "label": "Company Profile",
+   "options": "Company Profile"
+  },
+  {
+   "fieldname": "outreach_template",
+   "fieldtype": "Link",
+   "label": "Outreach Template",
+   "options": "Outreach Template"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email_subject",
+   "fieldtype": "Data",
+   "label": "Email Subject"
+  },
+  {
+   "fieldname": "email_body",
+   "fieldtype": "Text Editor",
+   "label": "Email Body"
+  },
+  {
+   "fieldname": "campaign_statistics_section",
+   "fieldtype": "Section Break",
+   "label": "Campaign Statistics"
+  },
+  {
+   "default": "0",
+   "fieldname": "created_leads",
+   "fieldtype": "Int",
+   "label": "Created Leads",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "emails_sent",
+   "fieldtype": "Int",
+   "label": "Emails Sent",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "emails_delivered",
+   "fieldtype": "Int",
+   "label": "Emails Delivered",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "emails_opened",
+   "fieldtype": "Int",
+   "label": "Emails Opened",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "emails_clicked",
+   "fieldtype": "Int",
+   "label": "Emails Clicked",
+   "read_only": 1
+  },
+  {
+   "default": "0.0",
+   "fieldname": "response_rate",
+   "fieldtype": "Float",
+   "label": "Response Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "execution_details_section",
+   "fieldtype": "Section Break",
+   "label": "Execution Details"
+  },
+  {
+   "fieldname": "execution_log",
+   "fieldtype": "Long Text",
+   "label": "Execution Log",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "api_usage_stats",
+   "fieldtype": "Long Text",
+   "label": "API Usage Stats (JSON)",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Lead Intelligence",
+ "name": "Lead Campaign",
+ "naming_rule": "By "Naming Series" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
