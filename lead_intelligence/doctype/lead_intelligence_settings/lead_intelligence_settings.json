@@ -1,0 +1,389 @@
+{
+ "actions": [],
+ "allow_copy": 0,
+ "allow_events_in_timeline": 0,
+ "allow_guest_to_view": 0,
+ "allow_import": 0,
+ "allow_rename": 0,
+ "autoname": "field:settings_name",
+ "beta": 0,
+ "creation": "2024-01-01 00:00:00.000000",
+ "custom": 0,
+ "docstatus": 0,
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "settings_name",
+  "column_break_2",
+  "is_active",
+  "section_break_4",
+  "google_places_api_key",
+  "google_places_enabled",
+  "column_break_7",
+  "openai_api_key",
+  "openai_enabled",
+  "openai_model",
+  "section_break_11",
+  "email_service",
+  "sendgrid_api_key",
+  "mailgun_api_key",
+  "mailgun_domain",
+  "column_break_16",
+  "smtp_server",
+  "smtp_port",
+  "smtp_username",
+  "smtp_password",
+  "smtp_use_tls",
+  "section_break_22",
+  "crm_integration",
+  "salesforce_client_id",
+  "salesforce_client_secret",
+  "salesforce_username",
+  "salesforce_password",
+  "column_break_28",
+  "hubspot_api_key",
+  "pipedrive_api_token",
+  "pipedrive_domain",
+  "section_break_32",
+  "data_enrichment_service",
+  "clearbit_api_key",
+  "zoominfo_api_key",
+  "column_break_36",
+  "hunter_api_key",
+  "apollo_api_key",
+  "section_break_39",
+  "default_search_radius",
+  "max_leads_per_campaign",
+  "column_break_42",
+  "email_rate_limit",
+  "api_rate_limit",
+  "section_break_45",
+  "webhook_secret",
+  "webhook_url",
+  "column_break_48",
+  "enable_logging",
+  "log_level"
+ ],
+ "fields": [
+  {
+   "fieldname": "settings_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Settings Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break",
+   "label": "Google Places API"
+  },
+  {
+   "fieldname": "google_places_api_key",
+   "fieldtype": "Password",
+   "label": "Google Places API Key"
+  },
+  {
+   "default": "0",
+   "fieldname": "google_places_enabled",
+   "fieldtype": "Check",
+   "label": "Enable Google Places"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "openai_api_key",
+   "fieldtype": "Password",
+   "label": "OpenAI API Key"
+  },
+  {
+   "default": "0",
+   "fieldname": "openai_enabled",
+   "fieldtype": "Check",
+   "label": "Enable OpenAI"
+  },
+  {
+   "default": "gpt-3.5-turbo",
+   "fieldname": "openai_model",
+   "fieldtype": "Select",
+   "label": "OpenAI Model",
+   "options": "gpt-3.5-turbo\ngpt-4\ngpt-4-turbo\ngpt-4o"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "label": "Email Service Configuration"
+  },
+  {
+   "default": "SMTP",
+   "fieldname": "email_service",
+   "fieldtype": "Select",
+   "label": "Email Service",
+   "options": "SMTP\nSendGrid\nMailgun\nSES"
+  },
+  {
+   "fieldname": "sendgrid_api_key",
+   "fieldtype": "Password",
+   "label": "SendGrid API Key"
+  },
+  {
+   "fieldname": "mailgun_api_key",
+   "fieldtype": "Password",
+   "label": "Mailgun API Key"
+  },
+  {
+   "fieldname": "mailgun_domain",
+   "fieldtype": "Data",
+   "label": "Mailgun Domain"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "smtp_server",
+   "fieldtype": "Data",
+   "label": "SMTP Server"
+  },
+  {
+   "default": "587",
+   "fieldname": "smtp_port",
+   "fieldtype": "Int",
+   "label": "SMTP Port"
+  },
+  {
+   "fieldname": "smtp_username",
+   "fieldtype": "Data",
+   "label": "SMTP Username"
+  },
+  {
+   "fieldname": "smtp_password",
+   "fieldtype": "Password",
+   "label": "SMTP Password"
+  },
+  {
+   "default": "1",
+   "fieldname": "smtp_use_tls",
+   "fieldtype": "Check",
+   "label": "Use TLS"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break",
+   "label": "CRM Integration"
+  },
+  {
+   "default": "None",
+   "fieldname": "crm_integration",
+   "fieldtype": "Select",
+   "label": "CRM Integration",
+   "options": "None\nSalesforce\nHubSpot\nPipedrive"
+  },
+  {
+   "fieldname": "salesforce_client_id",
+   "fieldtype": "Data",
+   "label": "Salesforce Client ID"
+  },
+  {
+   "fieldname": "salesforce_client_secret",
+   "fieldtype": "Password",
+   "label": "Salesforce Client Secret"
+  },
+  {
+   "fieldname": "salesforce_username",
+   "fieldtype": "Data",
+   "label": "Salesforce Username"
+  },
+  {
+   "fieldname": "salesforce_password",
+   "fieldtype": "Password",
+   "label": "Salesforce Password"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hubspot_api_key",
+   "fieldtype": "Password",
+   "label": "HubSpot API Key"
+  },
+  {
+   "fieldname": "pipedrive_api_token",
+   "fieldtype": "Password",
+   "label": "Pipedrive API Token"
+  },
+  {
+   "fieldname": "pipedrive_domain",
+   "fieldtype": "Data",
+   "label": "Pipedrive Domain"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break",
+   "label": "Data Enrichment Services"
+  },
+  {
+   "default": "None",
+   "fieldname": "data_enrichment_service",
+   "fieldtype": "Select",
+   "label": "Data Enrichment Service",
+   "options": "None\nClearbit\nZoomInfo\nHunter\nApollo"
+  },
+  {
+   "fieldname": "clearbit_api_key",
+   "fieldtype": "Password",
+   "label": "Clearbit API Key"
+  },
+  {
+   "fieldname": "zoominfo_api_key",
+   "fieldtype": "Password",
+   "label": "ZoomInfo API Key"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hunter_api_key",
+   "fieldtype": "Password",
+   "label": "Hunter API Key"
+  },
+  {
+   "fieldname": "apollo_api_key",
+   "fieldtype": "Password",
+   "label": "Apollo API Key"
+  },
+  {
+   "fieldname": "section_break_39",
+   "fieldtype": "Section Break",
+   "label": "Default Settings"
+  },
+  {
+   "default": "10000",
+   "fieldname": "default_search_radius",
+   "fieldtype": "Int",
+   "label": "Default Search Radius (meters)"
+  },
+  {
+   "default": "1000",
+   "fieldname": "max_leads_per_campaign",
+   "fieldtype": "Int",
+   "label": "Max Leads Per Campaign"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "100",
+   "fieldname": "email_rate_limit",
+   "fieldtype": "Int",
+   "label": "Email Rate Limit (per hour)"
+  },
+  {
+   "default": "1000",
+   "fieldname": "api_rate_limit",
+   "fieldtype": "Int",
+   "label": "API Rate Limit (per hour)"
+  },
+  {
+   "fieldname": "section_break_45",
+   "fieldtype": "Section Break",
+   "label": "Webhook Configuration"
+  },
+  {
+   "fieldname": "webhook_secret",
+   "fieldtype": "Password",
+   "label": "Webhook Secret"
+  },
+  {
+   "fieldname": "webhook_url",
+   "fieldtype": "Data",
+   "label": "Webhook URL"
+  },
+  {
+   "fieldname": "column_break_48",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_logging",
+   "fieldtype": "Check",
+   "label": "Enable Logging"
+  },
+  {
+   "default": "INFO",
+   "fieldname": "log_level",
+   "fieldtype": "Select",
+   "label": "Log Level",
+   "options": "DEBUG\nINFO\nWARNING\nERROR\nCRITICAL"
+  }
+ ],
+ "has_web_view": 0,
+ "hide_heading": 0,
+ "hide_toolbar": 0,
+ "idx": 0,
+ "image_view": 0,
+ "in_create": 0,
+ "is_submittable": 0,
+ "issingle": 1,
+ "istable": 0,
+ "max_attachments": 0,
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Lead Intelligence",
+ "name": "Lead Intelligence Settings",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lead Intelligence Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 0,
+ "read_only": 0,
+ "read_only_onload": 0,
+ "show_name_in_global_search": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 0,
+ "track_views": 0
+}

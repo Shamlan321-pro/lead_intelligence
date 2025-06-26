@@ -1,0 +1,286 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "campaign_details_section",
+  "naming_series",
+  "lead_campaign",
+  "execution_type",
+  "column_break_4",
+  "status",
+  "started_by",
+  "started_at",
+  "execution_statistics_section",
+  "target_leads",
+  "processed_leads",
+  "column_break_10",
+  "emails_sent",
+  "emails_failed",
+  "execution_details_section",
+  "execution_log",
+  "error_details",
+  "ai_usage_section",
+  "ai_requests_made",
+  "ai_tokens_used",
+  "column_break_17",
+  "ai_cost_incurred",
+  "personalization_success_rate",
+  "performance_metrics_section",
+  "leads_created",
+  "emails_delivered",
+  "column_break_22",
+  "emails_opened",
+  "emails_clicked",
+  "responses_received",
+  "completion_details_section",
+  "completed_at",
+  "execution_duration"
+ ],
+ "fields": [
+  {
+   "fieldname": "campaign_details_section",
+   "fieldtype": "Section Break",
+   "label": "Campaign Details"
+  },
+  {
+   "default": "EXEC-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "EXEC-.YYYY.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lead_campaign",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Lead Campaign",
+   "options": "Lead Campaign",
+   "reqd": 1
+  },
+  {
+   "default": "Manual",
+   "fieldname": "execution_type",
+   "fieldtype": "Select",
+   "label": "Execution Type",
+   "options": "Manual\nScheduled\nAutomatic",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Queued",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Queued\nRunning\nCompleted\nFailed\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "started_by",
+   "fieldtype": "Link",
+   "label": "Started By",
+   "options": "User"
+  },
+  {
+   "fieldname": "started_at",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Started At"
+  },
+  {
+   "fieldname": "execution_statistics_section",
+   "fieldtype": "Section Break",
+   "label": "Execution Statistics"
+  },
+  {
+   "default": 0,
+   "fieldname": "target_leads",
+   "fieldtype": "Int",
+   "label": "Target Leads"
+  },
+  {
+   "default": 0,
+   "fieldname": "processed_leads",
+   "fieldtype": "Int",
+   "label": "Processed Leads"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": 0,
+   "fieldname": "emails_sent",
+   "fieldtype": "Int",
+   "label": "Emails Sent"
+  },
+  {
+   "default": 0,
+   "fieldname": "emails_failed",
+   "fieldtype": "Int",
+   "label": "Emails Failed"
+  },
+  {
+   "fieldname": "execution_details_section",
+   "fieldtype": "Section Break",
+   "label": "Execution Details"
+  },
+  {
+   "fieldname": "execution_log",
+   "fieldtype": "Long Text",
+   "label": "Execution Log"
+  },
+  {
+   "fieldname": "error_details",
+   "fieldtype": "Long Text",
+   "label": "Error Details"
+  },
+  {
+   "fieldname": "ai_usage_section",
+   "fieldtype": "Section Break",
+   "label": "AI Usage Statistics"
+  },
+  {
+   "default": 0,
+   "fieldname": "ai_requests_made",
+   "fieldtype": "Int",
+   "label": "AI Requests Made"
+  },
+  {
+   "default": 0,
+   "fieldname": "ai_tokens_used",
+   "fieldtype": "Int",
+   "label": "AI Tokens Used"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": 0,
+   "fieldname": "ai_cost_incurred",
+   "fieldtype": "Currency",
+   "label": "AI Cost Incurred"
+  },
+  {
+   "default": 0,
+   "fieldname": "personalization_success_rate",
+   "fieldtype": "Percent",
+   "label": "Personalization Success Rate"
+  },
+  {
+   "fieldname": "performance_metrics_section",
+   "fieldtype": "Section Break",
+   "label": "Performance Metrics"
+  },
+  {
+   "default": 0,
+   "fieldname": "leads_created",
+   "fieldtype": "Int",
+   "label": "Leads Created"
+  },
+  {
+   "default": 0,
+   "fieldname": "emails_delivered",
+   "fieldtype": "Int",
+   "label": "Emails Delivered"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": 0,
+   "fieldname": "emails_opened",
+   "fieldtype": "Int",
+   "label": "Emails Opened"
+  },
+  {
+   "default": 0,
+   "fieldname": "emails_clicked",
+   "fieldtype": "Int",
+   "label": "Emails Clicked"
+  },
+  {
+   "default": 0,
+   "fieldname": "responses_received",
+   "fieldtype": "Int",
+   "label": "Responses Received"
+  },
+  {
+   "fieldname": "completion_details_section",
+   "fieldtype": "Section Break",
+   "label": "Completion Details"
+  },
+  {
+   "fieldname": "completed_at",
+   "fieldtype": "Datetime",
+   "label": "Completed At"
+  },
+  {
+   "fieldname": "execution_duration",
+   "fieldtype": "Data",
+   "label": "Execution Duration",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Lead Intelligence",
+ "name": "Campaign Execution",
+ "naming_rule": "By Naming Series",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
