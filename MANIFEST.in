@@ -1,0 +1,19 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+include .github
+recursive-include lead_intelligence *.css
+recursive-include lead_intelligence *.csv
+recursive-include lead_intelligence *.html
+recursive-include lead_intelligence *.ico
+recursive-include lead_intelligence *.js
+recursive-include lead_intelligence *.json
+recursive-include lead_intelligence *.md
+recursive-include lead_intelligence *.png
+recursive-include lead_intelligence *.py
+recursive-include lead_intelligence *.svg
+recursive-include lead_intelligence *.txt
+recursive-exclude lead_intelligence *.pyc
